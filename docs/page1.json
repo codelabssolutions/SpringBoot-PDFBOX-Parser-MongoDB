@@ -1,0 +1,65 @@
+```
+{
+	"1 - Dados do Exame":{
+		"No do Exame": $NUMBER,
+		"Data do Exame": $TIME,
+		"Protocolo": $STRING,
+		"Código": $STRING
+		},
+	"2 - Dados do Paciente":{
+		"Nome": $STRING,
+		"Sexo": $CHAR,
+		"Altura": $FLOAT,
+		"Peso": $INT,
+		"Idade": $INT,
+		"Fumante":STRING
+	},
+	"3 - Médico Solicitante":{
+		"Nome": $STRING,
+		"Tel.": "$STRING",
+		"Clínica": $STRING,
+		"Fax": $STRING
+	},
+	"4 - Resumo Estatístico":{
+		"Totais:":{
+			"Duração (h)": #HOURS,
+			"No Total de QRS's": $INT,
+			"Ectópicos Ventriculares" $INT,
+			"Ectópicos Supraventriculares":$INT,
+			"Artefatos (%)": $INT
+		},
+		"Arritmias Ventriculares":{
+			"Isoladas, das quais": $INT,
+			"em 4 episódios de Bigeminismo": $INT,
+			"Episódios em Pares": $INT,
+			"Taquicardias": $INT
+		},
+		"Arritmias Supraventriculares":{
+			"Isoladas": $INT,
+			"Pareadas": $INT,
+			"Taquicardias": $INT
+			"Maior":{"bat.":$BAT, "freq": $INT, "bpm às":$TIME},
+			"Mais rápida":{"bat.":$BAT, "freq": $INT, "bpm às":$TIME},
+			"Mais lenta":{"bat.":$BAT, "freq": $INT, "bpm às":$TIME}
+		},
+		"Freqüência Cardíaca":{
+			"Mín":{"bpm":$INT, "às":$HOURS},
+			"Média":{"bpm":$INT},
+			"Máx":{"bpm":$INT, "às":$HOURS}
+		},
+		"Pausas":{
+			"Pausas ( >= 2,5 s.)": $INT
+		},
+		"Depressão do ST":{
+				"C1": $INT,
+				"C2": $INT,
+				"C3": $INT
+		},
+		"Elevação do ST":{
+				"C1": $INT,
+				"C2": $INT,
+				"C3": $INT
+		}
+	}
+}
+```
